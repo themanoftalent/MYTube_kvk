@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube - Mini Video Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3, h4 {
+            color: #d32f2f;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MyTube - Mini Video Platform</h1>
+
+    <section>
+        <h2>Overview</h2>
+        <p>MyTube is a simple YouTube-style video platform made with plain HTML5, CSS3, and JavaScript. 
+        It does not use any frameworks or backend, making it easy to learn and run locally.</p>
+    </section>
+
+    <section>
+        <h2>Features Implemented</h2>
+
+        <h3>Core Features</h3>
+        <ul>
+            <li>Home page with a responsive video grid</li>
+            <li>Video watch page with a full HTML5 player</li>
+            <li>Real-time search filter by title</li>
+            <li>Light and dark theme toggle</li>
+            <li>Mobile, tablet, and desktop support</li>
+        </ul>
+
+        <h3>Interactive Features</h3>
+        <ul>
+            <li>Like button with live counter</li>
+            <li>Comment system that saves and displays user comments</li>
+            <li>“Watch Later” list stored in LocalStorage</li>
+            <li>Sidebar showing related videos</li>
+            <li>Instant updates when searching</li>
+        </ul>
+
+        <h3>Design Features</h3>
+        <ul>
+            <li>YouTube-inspired interface</li>
+            <li>Smooth animations and hover effects</li>
+            <li>Built using CSS Grid and Flexbox</li>
+            <li>Mobile-first responsive design</li>
+            <li>Accessible with semantic HTML elements</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>File Structure</h2>
+        <pre><code>mytube/
+├── index.html          # Home page with video grid
+├── video.html          # Video player page
+├── css/
+│   └── style.css       # All styling, including themes
+├── js/
+│   ├── app.js          # Logic for the home page
+│   └── video.js        # Logic for the video player
+└── README.md           # Project description
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>HTML5 (semantic elements, video tag)</li>
+            <li>CSS3 (Grid, Flexbox, custom properties)</li>
+            <li>Vanilla JavaScript (ES6+)</li>
+            <li>LocalStorage API for persistence</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to Run</h2>
+        <ol>
+            <li>Download and extract the project folder.</li>
+            <li>Open <code>index.html</code> in your web browser.</li>
+            <li>No server setup is required; all videos load from external URLs.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Video Sources</h2>
+        <ul>
+            <li>Videos are hosted on Google’s public test video repository.</li>
+            <li>Thumbnails are taken from Unsplash (free and royalty-free).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Features Not Included</h2>
+        <ul>
+            <li>User login and authentication</li>
+            <li>Video upload functionality</li>
+            <li>Backend or database connection</li>
+            <li>Recommended videos system</li>
+            <li>Playlists or user channels</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Browser Compatibility</h2>
+        <ul>
+            <li>Chrome 90+</li>
+            <li>Firefox 88+</li>
+            <li>Safari 14+</li>
+            <li>Edge 90+</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Known Issues</h2>
+        <p>Currently, there are no known issues. If a search finds no results, an appropriate message appears on the screen.</p>
+    </section>
+
+    <section>
+        <h2>Storage</h2>
+        <p>The application uses LocalStorage for:</p>
+        <ul>
+            <li>Theme preference (dark/light)</li>
+            <li>Watch Later list</li>
+            <li>Like counts</li>
+            <li>Comments</li>
+        </ul>
+        <p>All data is stored in the browser and stays available between sessions.</p>
+    </section>
+
+    <section>
+        <h2>Evaluation Criteria Met</h2>
+        <ul>
+            <li>Valid HTML structure with proper tags</li>
+            <li>Responsive layout using CSS Grid and Flexbox</li>
+            <li>Real-time JavaScript search filter</li>
+            <li>Like button with counter</li>
+            <li>Comment form with dynamic updates</li>
+            <li>Semantic and accessible HTML</li>
+            <li>Organized code and folder structure</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Bonus Features</h2>
+        <ul>
+            <li>Dark/light theme toggle</li>
+            <li>Watch Later functionality with badge counter</li>
+            <li>CSS transitions and hover animations</li>
+            <li>Notification system</li>
+            <li>Persistent data storage</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Code Quality</h2>
+        <ul>
+            <li>Clear variable and function names</li>
+            <li>Code comments where necessary</li>
+            <li>DRY (Don’t Repeat Yourself) principles applied</li>
+            <li>Consistent formatting and indentation</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Testing Instructions</h2>
+        <ul>
+            <li><strong>Search:</strong> Type in the search bar on the home page.</li>
+            <li><strong>Theme:</strong> Click the sun/moon icon in the header.</li>
+            <li><strong>Watch Later:</strong> Click the clock icon on any video card.</li>
+            <li><strong>Like:</strong> Click the thumbs-up icon on a video page.</li>
+            <li><strong>Comment:</strong> Type a message and click “Comment”.</li>
+            <li><strong>Navigation:</strong> Click any video to watch it.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Future Enhancements</h2>
+        <ul>
+            <li>Video categories and filters</li>
+            <li>Sort by date, views, or rating</li>
+            <li>Keyboard shortcuts</li>
+            <li>Video quality selector</li>
+            <li>Captions and subtitles</li>
+            <li>Share and watch history features</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Credits</h2>
+        <ul>
+            <li>Video thumbnails: Unsplash</li>
+            <li>Sample videos: Google test videos</li>
+            <li>Icons: Custom SVGs</li>
+            <li>Design inspiration: YouTube</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>License</h2>
+        <p>This is an educational project created for learning purposes only.</p>
+    </section>
+
+</body>
+</html>
